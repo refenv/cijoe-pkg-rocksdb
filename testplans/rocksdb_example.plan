@@ -1,0 +1,15 @@
+descr: "RocksDB example plan"
+descr_long: |
+  "Runs example RocksDB db_bench"
+hooks: []
+#evars:
+  #ROCKSDB_FILENAME: ""
+
+
+testsuites:
+  - name: "rocksdb_example"
+    hooks: []
+    evars:
+      SOME_ENV_VAR: SOME_VALUE
+    testcases:
+      - rocksdb_example.sh
